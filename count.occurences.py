@@ -1,10 +1,11 @@
-def count_freq(string):
+def count_freq(string, target):
     count=0
     for ch in string:
-        if ch== "a":
+        if ch== target:
             count+=1
     return count
 
 text=(input("Enter a string: "))
-res=count_freq(text)
+target=input("Enter the target: ")
+res=count_freq(text,target)
 print(res)
